@@ -1,0 +1,277 @@
+\section{​Technical Overview}
+
+\subsection{ODIN Coin}
+The ODIN Coin (ODIN) is a PoS coin that uses the ODIN blockchain. ODIN is the native currency throughout the ODIN Ecosystem (OE) and is aimed, like the rest of the ecosystem, at mass adoption and real-world utilization. 
+ 
+This will be promoted via the broad distribution of the ODIN Messenger (its first showcase app) and through the implementation of upcoming technologies and partnerships (see Roadmap).
+
+\subsection{ODIN Mobile Messenger}
+ODIN Mobile Messenger is an example decentralized application, (DApp), to demonstrate what can be built on top of the ODIN blockchain platform. It is a secure encrypted messenger which uses decentralized nodes, (at the time of writing, a stepping stone to upcoming ODIN service nodes), and allows signed messages on the blockchain. 
+ 
+Once a connection is established, the system switches to peer to peer (P2P) communication between people and bots. All communications are encrypted, and users can choose to have their hash stored on the ODIN blockchain for a small fee. The ODIN  Mobile Messenger will have wallets built in, which allows for the sending and receipt of ODIN via both chat and wallets. 
+
+\subsection{ODIN PoS Framework}
+ODIN uses a Proof of Stake approach to secure the blockchain. This uses vastly less electricity then Proof of Work algorithms and is therefore more environmentally friendly and sustainable. It also facilitates greater decentralization since masternodes can be operated inexpensively. Transaction fees are also a fraction of bitcoin fees.
+
+The ODN staking approach offers diverse options ranging from simple staking to more demanding masternoding schemes. A block reward (as described in the section \hyperlink{specifications}{ODIN Specifications}) will be split between masternodes and stakers where the exact ratios of the reward distribution will be adjusted over time.
+
+\subsection{ODIN Staking Wallets}
+Currently ODIN supports the ODIN-QT Windows, Linux, Mac and Android. This area is undergoing rapid development and updates are expected periodically.
+
+Simplified staking framework is available through the wallets and it is encouraged to stake your coins both for the securing the network and to gain staking rewards.
+
+Upcoming wallets:
+\begin{itemize}
+   \item Standalone Android wallet
+   \item Standalone iOS wallet
+   \item Raspberry Pi wallet
+   \item Docker Wallet
+   \item Paper wallet
+   \item Online web wallet
+   \item The ODIN messenger is set to feature a mobile ODIN wallet in 2018
+   \item Hardware wallets (related to hardware partnerships):
+   \begin{itemize}
+      \item Trezor
+      \item Keepkey
+      \item Ledger Nano S.
+   \end{itemize}
+\end{itemize}
+
+\subsection{​ODIN Masternodes}
+We now have a well-calibrated masternode policy (see \hyperlink{specifications}{ODIN Specifications}) which was missing pre-fork.  
+
+Our masternodes provide a decentralized network of servers separately held by individuals to provide the functional infrastructure of the ODIN blockchain.  As they provide additional services and security (supporting private transactions) they receive a greater reward than normal staking.   Given their large stake masternode owners have an incentive to maintain the security and integrity of the blockchain and guide its growth over time.
+
+The more activity and resources that are required, the more fees are generated and the greater rewards are given. The algorithmic protocols balance exactly the ratio of rewards between stakers and masternodes. Using this approach a passive income stream is created.
+
+In future releases, as we unveil additional ODIN features and products, masternodes will take on additional functional roles.
+
+\subsubsection{What do ODIN masternodes do?}
+Genuine masternodes holders have long term interests in mind. They are invested in the tech and the ecosystem and pay less attention to short term oscillations in value.  Therefore, masternodes themselves have a strong moderating effect on volatility in markets and the masternode community gradually grows into an informed and involved community. 
+
+Currently they facilitate processing of transactions, they secure the network, they assist with unique features such as SwiftX and Obfuscation and they have a stabilizing influence over the coin volatility. 
+
+Our masternodes also process zerocoin private transactions.
+
+However, masternodes are more than just the IT infrastructure layer of an ecosystem; they provide the foundation upon which a strong and committed community can grow.
+
+Intensive computing, storage and connectivity systems require a reliable infrastructure.  Masternodes provide these resources by creating a decentralized network of ``suppliers'' to the environment and are therefore providing a great tool against centralization whilst providing increased utility.
+
+Our robust masternoding policy is setup to
+\begin{itemize}
+   \item Channel the ecosystem away from coin centralization 
+   \item Offer a rational price that targets upper-mid range investors
+   \item Prevent a potential over-exploitation of the PoS features by large coin holders
+   \item Provide functional processes and offers a path towards platform fees
+   \item Provide additional security, reliability and performance to the blockchain
+   \item Ensure that a balance between sufficient liquidity and functional requirements.
+\end{itemize}
+If a masternode owner wishes to stop operating their masternode, they can unlock their coins and terminate the function at any time.
+
+\subsubsection{How do you run an ODIN masternode?}
+To run a masternode, one is required to lock sufficient amount of coin (\num{25000} ODIN per masternode) and follow the framework guidelines and operational criteria as per the upcoming published framework.
+
+As masternodes are required to commit significant coin and uphold a functional criteria they receive a greater reward than normal staking.  This additional reward is to compensate for costs and effort. 
+
+As running masternode requires significant holdings (\num{25000} ODIN per masternode) it is not `cheap' in terms of a monetary or a time commitment---hence there is incentive by this community to grow the impact of the project. However, due to a minimum amount of coins needed to run a masternode, it is also not feasible for large scale implementation. Therefore a large holder with hundreds of thousands or millions of coins would not be realistically able to run hundreds of servers and thereby over-ride decentralized consensus.  
+
+\subsubsection{What is the reward for running an ODIN masternode?}
+Masternodes receive block rewards as they provide functional roles on the various products that will make use of the masternode network and its offered functionalities. 
+ 
+At any point, masternodes will have higher ROI compared to staking. This compensates them for providing the key functional role in the ODIN infrastructure and for their added commitment to promote more decentralized infrastructure.
+
+The more activity and resources that are required, the more fees are generated and the greater rewards are given, algorithmic protocols balance exactly the ratio of rewards between stakers and masternodes so to ensure a healthy system that can grow and shrink as need be.
+
+At the moment of writing 116.53 ODIN is rewarded for each block which is targeted to occur every 60 seconds. The return on investment for a masternode owner in the first year will change as masternodes are added and removed.
+
+For clarity, the P2P and zODIN Transaction fees are burned.
+
+\subsection{SwiftTX}
+SwiftTX is a near-instantaneous and highly efficient mechanism for creating consensus and for locking-in transactions using a randomly selected masternode prior to being written into the blockchain.
+
+This allows for great improvement in functional performance, allowing for near-real time transactions for non-critical operations (security of transaction's validity increases after being added into a block and greatly increases after ``maturing'' for a few blocks). This protocol will play an essential role in many operational elements to be developed and unveiled on the ODIN network.
+
+After submission a subset of masternodes will validate the transaction and on reaching consensus they will lock this transaction for later addition to the blockchain.  Using this consensus mechanism multiple transaction can take place before block mine with the same inputs.  This approach greatly increases transaction speed compared with consensus mechanisms available in Bitcoin (for example)
+
+\subsection{TOR \& IPV6 Masternodes}
+Continuing with reinstating a privacy oriented environment, both nodes and masternodes can be run on IPV6 and onion address. Building a stable and smooth TOR network will require further development and mostly sufficient adoption by TOR masternodes, following which a significant layer of privacy, anonymity and security would be added.
+
+Severing the link between the masternode hosting network through onionization as a complete TOR network would be most important to less secure domestic networks as well as improving overall anonymity of masternodes and opening many promising directions for future development of TOR oriented features.
+
+\subsection{Sporks}
+Sporking allows the network to quickly respond to security vulnerabilities and to implement new features in a smooth and low involvement from coin holders' and users' end.  Sporking is a multi-phased forking mechanism which in addition to minimising the risk of unintended network forks during rollouts, allows to respond to threats or issue patches without requiring nodes to run software updates.
+
+Sporking is achieved by automatically changing a blockchain's behavior starting with a certain block. This specific block's number is not required to be known beforehand. Through this method, a blockchain's software can be automatically updated without any specific commands from the node operators. It is achieved merely through nodes receiving a message telling them when the software change comes into effect.
+
+This method is extremely user friendly and goes hand in hand with our focus on \href{https://odinblockchain.org/#intuitive}{Intuitivity}. We wish to be as user friendly as possible in each aspect on our chain, from the blockchain's core features to the applications developed to run on top of the network.
+
+\subsection{Zerocoin Protocol}
+We all need privacy in certain elements of our lives.  Our belief is that this need for privacy also extends to elements of our life online.  In Bitcoin transactions information about the sender and receiver is publicly broadcast including the address where the bitcoin is coming from, the address it is going to and the amount sent. 
+
+With proper scrutiny it is possible to reveal the identity of the owner over time. With cryptocurrencies that do not guarantee privacy, personal information can be analyzed, aggregated and ultimately sold without your knowledge or consent.
+
+To guarantee privacy within transactions, ODIN uses a protocol called Zerocoin.  
+
+Zerocoin completely breaks the transaction links between coins through the use of zero knowledge proofs. Simply speaking, zero knowledge proofs allow a party to prove a secret without revealing it to the other party.
+
+Zerocoin mint allows you to burn coins and later redeem an equivalent amount of brand new coins (Zerocoin spend).  As these are brand new coins they have no prior transaction history.  In ODIN, Zerocoin verifies the transaction between the sender and receiver without revealing this link via the masternode infrastructure.  
+
+Zerocoin minting is almost instantaneous and spending is a matter of seconds.
+We have implanted a scaled level of security so the degrees to which you wish the coins to be mixed can be from five blocks before yours, to every coin in existence. For a small transaction ODIN can be minted in Zerocoin ODIN in a variety of standardized denominations.
+
+Because of its additional computational energy required Minting Zerocoin ODIN (zODIN) is more expensive than a normal transaction.
+
+Like other transaction fees, the zODIN fees are burned, reducing the total supply of ODIN. zODIN can be converted back later to ODIN, by sending them to their own wallet addresses, or to spend them at any other ODIN address, and spending zODIN has no transaction fee. Whilst they are held, zODIN are stored in the user's wallet like secure vouchers for ODIN that can be redeemed anonymously. If someone was concerned about being targeted by hackers, because they have a high balance in their account, using zODIN will mask their true balance, creating the ability to hold ``stealth'' value that cannot easily be traced back to the user's wallet.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tables are one of the weaknesses in LaTeX.  I actually did these in another program (LyX) and then
+% copied and pasted the latex code here.  I didn't make it pretty... sorry!
+\section{​ODIN Specifications}\hypertarget{specifications}{}
+\begin{center}
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{p{6.5cm} p{8cm}}
+\hline
+Item & Value \\
+\hline
+\hline
+Trading Symbol                          & ODIN                  \\
+
+Block Time                              & 60 Seconds            \\
+
+Block Maturity                          & 50 confirmations      \\
+
+Confirmation Time       & 6 Blocks ($\sim$6 Minutes) for P2P TXs, 51 Blocks ($\sim$51 Minutes) for Staking/Masternode Rewards\\
+
+Block Size              & Maximum 2 MB \\
+
+Premine Supply*          & \num{250000000} (estimated depending on total claim by the community) \tabularnewline
+
+Current Supply**          & \num{250500000} \\
+
+Block Reward            & 116 (decreases over time) \\
+
+Masternode Reward Ratio & $48\% - xx$ ODIN$^\dag$\\
+
+Staking Reward Ratio    & $32\% - xx$ ODIN$^\dag$ \\
+
+Community Developer Fund Ratio & $10\% - xx$ ODIN$^\dag$ \\
+
+Foundation Operating Costs     & $10\% - xx$ ODIN$^\dag$ \\
+
+Transaction Fee         & $< 0.001^{\dag\dag}$ \\
+
+Zerocoin Transaction fee & 0.01 zODIN$^{\dag\dag}$ \\
+
+Masternode Requirement  & \num{25000} ODIN \\
+
+PoW                     & Up to block 1500 \\
+
+RPC Port                & 33221 \\
+
+P2P Port                & 33222 \\
+
+PoS Implementations     & Blackcoin v3.0 PoS \\
+
+Supported Protocols     & IPV4, IPV6, TOR \\
+\hline 
+\end{tabular}
+\begin{tablenotes}
+   \item[*] Any unclaimed coins will be burned.
+   \item[**] This will be reduced by a significant amount through a coin burn. This amount will be determined once we have a figure for the total ODIN that is being claimed by the community.
+   \item[\dag] Amount will decrease overtime as Reward decreases, amount shown is current for current time of writing.
+   \item[\dag\dag] P2P and zODIN transaction fees are burned
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{center}
+\renewcommand{\arraystretch}{1}
+
+ 
+\subsection{ODIN Block generation/reward scheme}
+\renewcommand{\arraystretch}{1.2}
+\begin{center}
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}
+\begin{tabular}{|rrrrrrr|}
+\hline 
+Term & Reward & Block Reward & Estimated ROI$^\dag$ & From Block & To Block & Ending Supply$^{\dag\dag}$\tabularnewline
+\hline 
+\hline
+Y1 Q1 & 15312500 & 116.53 & 70\% & 10000 & 141400 & 102812500\tabularnewline
+\hline
+Y1 Q2 & 15293359 & 116.39 & 60\% & 141401 & 272801 & 118105859\tabularnewline
+\hline
+Y1 Q3 & 14933010 & 113.65 & 51\% & 272802 & 404202 & 133038869\tabularnewline
+\hline
+Y1 Q4 & 14297937 & 108.81 & 43\% & 404203 & 535603 & 147336806\tabularnewline
+\hline
+Y2 Q1 & 13459378 & 102.43 & 37\% & 535604 & 667004 & 160796184\tabularnewline
+\hline
+Y2 Q2 & 12485571 & 95.02 & 31\% & 667005 & 798405 & 173281755\tabularnewline
+\hline
+Y2 Q3 & 11436798 & 87.04 & 26\% & 798406 & 929806 & 184718553\tabularnewline
+\hline
+Y2 Q4 & 10362894 & 78.87 & 22\% & 929807 & 1061207 & 195081447\tabularnewline
+\hline
+Y3 Q1 & 9302623 & 70.8 & 19\% & 1061208 & 1192608 & 204384070\tabularnewline
+\hline
+Y3 Q2 & 8284292 & 63.05 & 16\% & 1192609 & 1324009 & 212668362\tabularnewline
+\hline
+Y3 Q3 & 7327067 & 55.76 & 14\% & 1324010 & 1455410 & 219995430\tabularnewline
+\hline
+Y3 Q4 & 6442581 & 49.03 & 12\% & 1455411 & 1586811 & 226438011\tabularnewline
+\hline
+Y4 Q1 & 5660950 & 43.08 & 10\% & 1586812 & 1718212 & 232098961\tabularnewline
+\hline
+Y4 Q2 & 5802474 & 44.16 & 10\% & 1718213 & 1849613 & 237901435\tabularnewline
+\hline
+Y4 Q3 & 5947536 & 45.26 & 10\% & 1849614 & 1981014 & 243848971\tabularnewline
+\hline
+Y4 Q4 & 6096224 & 46.39 & 10\% & 1981015 & 2112415 & 249945195\tabularnewline
+\hline
+Y5 Q1 & 6248630 & 47.55 & 10\% & 2112416 & 2243816 & 256193825\tabularnewline
+\hline
+Y5 Q2 & 6404846 & 48.74 & 10\% & 2243817 & 2375217 & 262598671\tabularnewline
+\hline
+Y5 Q3 & 6564967 & 49.96 & 10\% & 2375218 & 2506618 & 269163637\tabularnewline
+\hline
+Y5 Q4 & 6729091 & 51.21 & 10\% & 2506619 & 2638019 & 275892728\tabularnewline
+\hline
+Y6 Q1 & 6897318 & 52.49 & 10\% & 2638020 & 2769420 & 282790047\tabularnewline
+\hline
+Y6 Q2 & 7069751 & 53.8 & 10\% & 2769421 & 2900821 & 289859798\tabularnewline
+\hline
+Y6 Q3 & 7246495 & 55.15 & 10\% & 2900822 & 3032222 & 297106293\tabularnewline
+\hline
+Y6 Q4 & 7427657 & 56.53 & 10\% & 3032223 & 3163623 & 304533950\tabularnewline
+\hline
+Y7 Q1 & 7613349 & 57.94 & 10\% & 3163624 & 3295024 & 312147299\tabularnewline
+\hline
+Y7 Q2 & 7803682 & 59.39 & 10\% & 3295025 & 3426425 & 319950981\tabularnewline
+\hline
+Y7 Q3 & 7998775 & 60.87 & 10\% & 3426426 & 3557826 & 327949756\tabularnewline
+\hline
+Y7 Q4 & 8198744 & 62.4 & 10\% & 3557827 & 3689227 & 336148500\tabularnewline
+\hline
+Y8 Q1 & 8403712 & 63.96 & 10\% & 3689228 & 3820628 & 344552212\tabularnewline
+\hline
+Y8 Q2 & 8613805 & 65.55 & 10\% & 3820629 & 3952029 & 353166018\tabularnewline
+\hline
+Y8 Q3 & 8829150 & 67.19 & 10\% & 3952030 & 4083430 & 361995168\tabularnewline
+\hline
+Y8 Q4 & 9049879 & 68.87 & 10\% & 4083431 & 4214831 & 371045047\tabularnewline
+\hline
+\end{tabular}
+% }
+\begin{tablenotes}
+   \footnotesize 
+   \item[\dag] Estimated ROI percentage is based on an estimation of number of masternodes running.
+   \item[\dag\dag]Ending supply numbers are dependent on the amount of total ODIN claimed. 
+   \normalsize
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{center}
+If, for instance, we take the amount held by the community as approximately 50M ODN, and 100\% of this is claimed, the community will receive a total of 125M ODIN. Making the initial total supply, in this instance 147M. 
